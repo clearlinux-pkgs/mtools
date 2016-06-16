@@ -4,7 +4,7 @@
 #
 Name     : mtools
 Version  : 4.0.18
-Release  : 1
+Release  : 2
 URL      : ftp://ftp.gnu.org/gnu/mtools/mtools-4.0.18.tar.gz
 Source0  : ftp://ftp.gnu.org/gnu/mtools/mtools-4.0.18.tar.gz
 Summary  : mtools, read/write/list/format DOS disks under Unix
@@ -38,6 +38,14 @@ Group: Documentation
 doc components for the mtools package.
 
 
+%package extras
+Summary: extras components for the mtools package.
+Group: Default
+
+%description extras
+extras components for the mtools package.
+
+
 %prep
 %setup -q -n mtools-4.0.18
 
@@ -61,8 +69,8 @@ rm -rf %{buildroot}
 
 %files bin
 %defattr(-,root,root,-)
+%exclude /usr/bin/floppyd
 /usr/bin/amuFormat.sh
-/usr/bin/floppyd
 /usr/bin/floppyd_installtest
 /usr/bin/lz
 /usr/bin/mattrib
@@ -102,3 +110,7 @@ rm -rf %{buildroot}
 %doc /usr/share/info/*
 %doc /usr/share/man/man1/*
 %doc /usr/share/man/man5/*
+
+%files extras
+%defattr(-,root,root,-)
+/usr/bin/floppyd
