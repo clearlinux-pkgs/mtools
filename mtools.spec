@@ -4,7 +4,7 @@
 #
 Name     : mtools
 Version  : 4.0.23
-Release  : 3
+Release  : 4
 URL      : ftp://ftp.gnu.org/gnu/mtools/mtools-4.0.23.tar.gz
 Source0  : ftp://ftp.gnu.org/gnu/mtools/mtools-4.0.23.tar.gz
 Summary  : mtools, read/write/list/format DOS disks under Unix
