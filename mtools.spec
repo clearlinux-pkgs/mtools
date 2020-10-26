@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xC80631B26F431961 (alain@knaff.lu)
 #
 Name     : mtools
-Version  : 4.0.24
-Release  : 6
-URL      : https://mirrors.kernel.org/gnu/mtools/mtools-4.0.24.tar.gz
-Source0  : https://mirrors.kernel.org/gnu/mtools/mtools-4.0.24.tar.gz
-Source1  : https://mirrors.kernel.org/gnu/mtools/mtools-4.0.24.tar.gz.sig
+Version  : 4.0.25
+Release  : 7
+URL      : https://mirrors.kernel.org/gnu/mtools/mtools-4.0.25.tar.gz
+Source0  : https://mirrors.kernel.org/gnu/mtools/mtools-4.0.25.tar.gz
+Source1  : https://mirrors.kernel.org/gnu/mtools/mtools-4.0.25.tar.gz.sig
 Summary  : mtools, read/write/list/format DOS disks under Unix
 Group    : Development/Tools
 License  : GPL-3.0 GPL-3.0+
@@ -59,22 +59,22 @@ man components for the mtools package.
 
 
 %prep
-%setup -q -n mtools-4.0.24
-cd %{_builddir}/mtools-4.0.24
+%setup -q -n mtools-4.0.25
+cd %{_builddir}/mtools-4.0.25
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1585087258
+export SOURCE_DATE_EPOCH=1603748491
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %configure --disable-static
 make  %{?_smp_mflags}
@@ -84,13 +84,13 @@ export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-make VERBOSE=1 V=1 %{?_smp_mflags} check
+make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1585087258
+export SOURCE_DATE_EPOCH=1603748491
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/mtools
-cp %{_builddir}/mtools-4.0.24/COPYING %{buildroot}/usr/share/package-licenses/mtools/8624bcdae55baeef00cd11d5dfcfa60f68710a02
+cp %{_builddir}/mtools-4.0.25/COPYING %{buildroot}/usr/share/package-licenses/mtools/8624bcdae55baeef00cd11d5dfcfa60f68710a02
 %make_install
 
 %files
