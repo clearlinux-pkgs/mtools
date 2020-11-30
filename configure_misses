@@ -7,6 +7,8 @@ Configure miss: sys/floppy.h usability
 Configure miss: sys/floppy.h presence
 Configure miss: sys/floppy.h
 Configure miss: whether llseek declared in unistd.h
+Configure miss: strtoi
+Configure miss: strtoui
 Configure miss: media_oldaliases
 Configure miss: llseek
 Configure miss: getuserid
