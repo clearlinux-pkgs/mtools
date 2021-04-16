@@ -1,19 +1,19 @@
-Configure miss: getpwnam in -lsun
+Configure miss: X
 Configure miss: cam_open_device in -lcam
-Configure miss: libc.h usability
-Configure miss: libc.h presence
+Configure miss: getgroupid
+Configure miss: getpwnam in -lsun
+Configure miss: getuserid
 Configure miss: libc.h
-Configure miss: sys/floppy.h usability
-Configure miss: sys/floppy.h presence
-Configure miss: sys/floppy.h
-Configure miss: whether llseek declared in unistd.h
+Configure miss: libc.h presence
+Configure miss: libc.h usability
+Configure miss: llseek
+Configure miss: main in -lbsd
+Configure miss: main in -lsocket
+Configure miss: media_oldaliases
 Configure miss: strtoi
 Configure miss: strtoui
-Configure miss: media_oldaliases
-Configure miss: llseek
-Configure miss: getuserid
-Configure miss: getgroupid
+Configure miss: sys/floppy.h
+Configure miss: sys/floppy.h presence
+Configure miss: sys/floppy.h usability
 Configure miss: whether gcc supports offset_t type
-Configure miss: X
-Configure miss: main in -lsocket
-Configure miss: main in -lbsd
+Configure miss: whether llseek declared in unistd.h
