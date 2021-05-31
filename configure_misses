@@ -1,5 +1,6 @@
 Configure miss: X
 Configure miss: cam_open_device in -lcam
+Configure miss: declaration of sys_errlist
 Configure miss: getgroupid
 Configure miss: getpwnam in -lsun
 Configure miss: getuserid
