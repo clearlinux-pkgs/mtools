@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xE99CF5537790B839 (alain@knaff.lu)
 #
 Name     : mtools
-Version  : 4.0.29
-Release  : 10
-URL      : https://mirrors.kernel.org/gnu/mtools/mtools-4.0.29.tar.gz
-Source0  : https://mirrors.kernel.org/gnu/mtools/mtools-4.0.29.tar.gz
-Source1  : https://mirrors.kernel.org/gnu/mtools/mtools-4.0.29.tar.gz.sig
+Version  : 4.0.30
+Release  : 11
+URL      : https://mirrors.kernel.org/gnu/mtools/mtools-4.0.30.tar.gz
+Source0  : https://mirrors.kernel.org/gnu/mtools/mtools-4.0.30.tar.gz
+Source1  : https://mirrors.kernel.org/gnu/mtools/mtools-4.0.30.tar.gz.sig
 Summary  : mtools, read/write/list/format DOS disks under Unix
 Group    : Development/Tools
 License  : GPL-3.0 GPL-3.0+
@@ -59,15 +59,15 @@ man components for the mtools package.
 
 
 %prep
-%setup -q -n mtools-4.0.29
-cd %{_builddir}/mtools-4.0.29
+%setup -q -n mtools-4.0.30
+cd %{_builddir}/mtools-4.0.30
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1622493881
+export SOURCE_DATE_EPOCH=1624043400
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -87,10 +87,10 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1622493881
+export SOURCE_DATE_EPOCH=1624043400
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/mtools
-cp %{_builddir}/mtools-4.0.29/COPYING %{buildroot}/usr/share/package-licenses/mtools/8624bcdae55baeef00cd11d5dfcfa60f68710a02
+cp %{_builddir}/mtools-4.0.30/COPYING %{buildroot}/usr/share/package-licenses/mtools/8624bcdae55baeef00cd11d5dfcfa60f68710a02
 %make_install
 
 %files
