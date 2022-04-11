@@ -10,7 +10,6 @@ Configure miss: libc.h usability
 Configure miss: main in -lbsd
 Configure miss: main in -lsocket
 Configure miss: media_oldaliases
-Configure miss: strtoi
 Configure miss: strtoui
 Configure miss: sys/fdio.h
 Configure miss: sys/fdio.h presence
