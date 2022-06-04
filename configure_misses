@@ -1,19 +1,12 @@
 Configure miss: X
 Configure miss: cam_open_device in -lcam
-Configure miss: declaration of sys_errlist
+Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: getgroupid
 Configure miss: getpwnam in -lsun
 Configure miss: getuserid
 Configure miss: libc.h
-Configure miss: libc.h presence
-Configure miss: libc.h usability
-Configure miss: main in -lbsd
-Configure miss: main in -lsocket
 Configure miss: media_oldaliases
 Configure miss: strtoui
 Configure miss: sys/fdio.h
-Configure miss: sys/fdio.h presence
-Configure miss: sys/fdio.h usability
 Configure miss: sys/floppy.h
-Configure miss: sys/floppy.h presence
-Configure miss: sys/floppy.h usability
+Configure miss: whether sys_errlist is declared
