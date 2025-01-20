@@ -1,3 +1,9 @@
+v4_0_47
+	- fixed some of the manpage issues reported by manpage-l10n
+	- unix-dir copying on Windows fix
+	- new no-daemon mode for floppyd to make testing easier
+	- make floppyd independant of XauFileName (portability)
+	- autoconf fixes
 v4_0_46
 	- iconv buffer overflow fixes
 	- removed references to mread and mwrite (obsolete subcommands

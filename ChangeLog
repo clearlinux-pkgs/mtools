@@ -1,3 +1,11 @@
+mtools (4.0.47) stable; urgency=low
+  * fixed some of the manpage issues reported by manpage-l10n
+  * unix-dir copying on Windows fix
+  * new no-daemon mode for floppyd to make testing easier
+  * make floppyd independant of XauFileName (portability)
+  * autoconf fixes
+
+ -- Alain Knaff <alain@knaff.lu>  Sun, 19 Jan 2025 09:17:00 +0100
 mtools (4.0.46) stable; urgency=low
   * iconv buffer overflow fixes
   * removed references to mread and mwrite (obsolete subcommands
