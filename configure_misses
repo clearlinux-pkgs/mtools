@@ -6,6 +6,8 @@ Configure miss: getpwnam in -lsun
 Configure miss: getpwnam in -lsun
 Configure miss: libc.h
 Configure miss: libc.h
+Configure miss: stdbool.h that conforms to C99
+Configure miss: stdbool.h that conforms to C99
 Configure miss: strtoui
 Configure miss: strtoui
 Configure miss: sys/fdio.h

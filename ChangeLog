@@ -1,3 +1,16 @@
+mtools (4.0.49) stable; urgency=low
+  * Correctly detect overlong file names, especially when
+    multibyte (UTF-8) strings are concerned
+  * Fix off-by-one error in 2 calls to native_to_wchar
+  * When changing disk label, ignore any plain file which would
+    match label
+  * Added missing newlines in error messages about disk geometry
+  * Do not print error message if getting geometry is simply not
+    supported by device type (such as for loop devices)
+  * If full geometry of a device is not available (such as for
+    loop devices), at least make use of the size
+
+ -- Alain Knaff <alain@knaff.lu>  Sat, 14 Jun 2025 18:09:19 +0200
 mtools (4.0.48) stable; urgency=low
   * portability fixes, mostly for Watcom compiler
   * cleaned up some other warnings
